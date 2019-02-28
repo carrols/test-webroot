@@ -6,7 +6,11 @@
 
 <body>
     <h2>NSS Automated Deployment Test</h2>
-    <p>Hello from the NSS Automated Deployment Test Server</p>
+    <p>Hello from the NSS Automated Deployment Test Server 
+<%
+  Set objWSHNetwork = Server.CreateObject("WScript.Network") 
+  Response.Write objWSHNetwork.ComputerName
+%></p>
 </body>
 	
 </html>
